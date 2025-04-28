@@ -1,0 +1,63 @@
+<div class="sptb-container">
+    <div class="sptb-header">
+        <h2>Our Pricing Plans</h2>
+    </div>
+
+    <div class="sptb-toggle">
+        <button class="active" data-plan="monthly">Monthly</button>
+        <button data-plan="yearly">Yearly</button>
+    </div>
+
+    <div class="sptb-pricing-table">
+        
+        <!-- Plan 1 -->
+        <div class="sptb-plan">
+            <div class="sptb-plan-title">Basic</div>
+            <div class="sptb-plan-price" data-monthly="$9/mo" data-yearly="$90/yr">$9/mo</div>
+            <ul class="sptb-plan-features">
+                <li>1 Website</li>
+                <li>10 GB Storage</li>
+                <li>Email Support</li>
+                <li>Basic Analytics</li>
+            </ul>
+            <a href="#" class="sptb-button">Choose Plan</a>
+        </div>
+
+        <!-- Plan 2 -->
+        <div class="sptb-plan">
+            <div class="sptb-plan-title">Pro</div>
+            <div class="sptb-plan-price" data-monthly="$19/mo" data-yearly="$190/yr">$19/mo</div>
+            <ul class="sptb-plan-features">
+                <li>5 Websites</li>
+                <li>100 GB Storage</li>
+                <li>Priority Support</li>
+                <li>Advanced Analytics</li>
+            </ul>
+            <a href="#" class="sptb-button">Choose Plan</a>
+        </div>
+
+        <!-- Plan 3 -->
+        <div class="sptb-plan">
+            <div class="sptb-plan-title">Enterprise</div>
+            <div class="sptb-plan-price" data-monthly="$49/mo" data-yearly="$490/yr">$49/mo</div>
+            <ul class="sptb-plan-features">
+                <li>Unlimited Websites</li>
+                <li>1 TB Storage</li>
+                <li>24/7 Support</li>
+                <li>Full Analytics Suite</li>
+            </ul>
+            <a href="#" class="sptb-button">Choose Plan</a>
+        </div>
+
+    </div>
+
+    <div class="sptb-export-buttons">
+        <button id="sptb-export-pdf">Export as PDF</button>
+        <button id="sptb-copy-html">Copy HTML</button>
+        <button id="sptb-dark-mode-toggle">Toggle Dark Mode</button>
+    </div>
+</div>
+
+<!-- Required external libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
