@@ -1,0 +1,143 @@
+/* Smart Pricing Table Builder - Main Stylesheet */
+
+.sptb-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.sptb-header {
+    margin-bottom: 20px;
+}
+
+.sptb-toggle {
+    margin-bottom: 30px;
+}
+
+.sptb-toggle button {
+    padding: 10px 20px;
+    border: none;
+    background: linear-gradient(45deg, #4CAF50, #81C784);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+    margin: 0 5px;
+}
+
+.sptb-toggle button.active {
+    background: linear-gradient(45deg, #2196F3, #64B5F6);
+}
+
+.sptb-pricing-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sptb-plan {
+    background: #ffffff;
+    border: 1px solid #eee;
+    padding: 20px;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.sptb-plan:hover {
+    transform: translateY(-5px);
+}
+
+.sptb-plan-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.sptb-plan-price {
+    font-size: 36px;
+    color: #4CAF50;
+    margin: 15px 0;
+}
+
+.sptb-plan-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.sptb-plan-features li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 25px;
+}
+
+.sptb-plan-features li::before {
+    content: "\f00c";
+    font-family: 'FontAwesome';
+    position: absolute;
+    left: 0;
+    color: #4CAF50;
+}
+
+.sptb-button {
+    background: linear-gradient(45deg, #2196F3, #64B5F6);
+    padding: 10px 25px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 25px;
+    transition: background 0.3s;
+}
+
+.sptb-button:hover {
+    background: linear-gradient(45deg, #1976D2, #42A5F5);
+}
+
+/* Dark Mode Styles */
+body.sptb-dark-mode .sptb-plan {
+    background: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+body.sptb-dark-mode .sptb-plan-price {
+    color: #81C784;
+}
+
+body.sptb-dark-mode .sptb-plan-features li::before {
+    color: #81C784;
+}
+
+/* Export and Copy Buttons */
+.sptb-export-buttons {
+    margin-top: 20px;
+}
+
+.sptb-export-buttons button {
+    padding: 8px 15px;
+    margin: 0 5px;
+    background: #757575;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.sptb-export-buttons button:hover {
+    background: #616161;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sptb-pricing-table {
+        flex-direction: column;
+        align-items: center;
+    }
+}
